@@ -73,7 +73,7 @@
 
 body {
 	font-family: $font-primary;
-	color: #333;
+	color: #2E3A59;
 	background-color: #fff;
 	overflow-x: hidden;
 	display: flex;
@@ -369,6 +369,12 @@ input:checked+label {
 
     &:hover{
         text-decoration: none;
+    }
+    span{
+        margin-left: 16px;
+    }
+    &.btn-login{
+        padding: 15px 25px;
     }
 }
 
