@@ -1,0 +1,66 @@
+.container-intro {
+    padding-bottom: 275px;
+//     background: url('assets/img/background-image-tools.jpg') no-repeat bottom left,  
+// }
+
+
+
+.container-title{
+    position: relative;
+
+    max-width: 611px;
+    margin-top: 125px;
+
+    font-weight: 800;    
+    line-height: 67px;
+
+    h1{
+        color:$white;
+    }
+    
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 110px;
+        height: 5px;
+        background: $primary-gradient;
+        bottom: -28px;
+        left: 0;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 8px;
+        background: $primary-color;
+        left: -15px;
+        top: 15px;
+        transform: rotate(-45deg);
+    }
+    
+}
+
+.container-text{
+    max-width: 680px;
+
+    margin-top: 60px;
+
+    p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: $white;
+    }
+    
+}
+
+.intro-buttons{
+    margin-top: 46px;    
+}
+
+// a.btn.btn-success.btn-intro {
+//     margin-left: 34px;    
+// }

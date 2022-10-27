@@ -257,12 +257,12 @@ h6,
 .title_6 {
     line-height: 1.4;
     color: #000;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 h1,
 .title_1 {
-    font-size: 46px;
+    font-size: 55px;
 }
 
 h2,
@@ -408,14 +408,14 @@ input:checked+label {
 }
 
 .btn-success {
-    color: $primary-color;
+    color: $white;
     background-color: transparent;
     border: 2px solid transparent;
-    border-color: $primary-color;
+    border-color: $white;
 
     &:hover {
-        background-color: $primary-color;
-        border-color: $primary-color;
+        background-color: $black;
+        border-color: $black;
     }
 }
 
