@@ -1,6 +1,6 @@
 .intro{
     .container{
-        padding-bottom: 275px; 
+        padding-bottom: 310px; 
            
     }    
     .container-title{
@@ -54,7 +54,17 @@
     }
     
     .btn-row{
-        margin-top: 46px;    
+        margin-top: 46px;
+
+        position: relative;
+
+        &::before{
+            content: url(/dev/assets/img/background-image-tools.png);
+            
+            position: absolute;          
+            top: 92px;
+            left: -168px;
+        }    
     }
     // }
     a.btn.btn-success.btn-intro {

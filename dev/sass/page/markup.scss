@@ -362,10 +362,10 @@ input:checked+label {
     white-space: nowrap;
     vertical-align: middle;
     user-select: none;
-    border: 1px solid $primary-color;
+    // border: 1px solid $primary-color;
     line-height: 1.2;
     border-radius: 5px;
-    color: #fff;    
+    color: #AAAAAA;    
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
     &:hover{
