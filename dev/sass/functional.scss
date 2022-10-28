@@ -1,0 +1,50 @@
+.functional_block{
+    width: 650px;
+
+    h2{
+        text-align: center;
+        margin-bottom: 25px;
+
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 55px;
+
+        color: $text;
+
+        position: relative;
+    }
+    &::before{
+        content: "";
+        width: 40px;
+        height: 8px;
+        background: $primary-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    p{        
+        text-align: center;
+        padding: 0 60px;
+        margin-bottom: 60px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #828282;
+    }
+    .list-group{
+        width: 535px;
+        .list-group-item{
+            border: none;
+    
+            span{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            
+        }
+    }
+    
+}

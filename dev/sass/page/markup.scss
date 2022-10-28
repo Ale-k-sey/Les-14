@@ -183,8 +183,8 @@ ol, ul {
             font-weight: 700;
             color: $primary-color;
             position: absolute;
-            top: 0;
-            left: 0
+            top: 14px;
+            left: -24px;
         }
     }
 }
@@ -195,11 +195,12 @@ ul {
         &::before {
             content: "";
             background-color: $primary-color;
-            border-radius: 50%;
+            // border-radius: 50%;
             width: 10px;
             min-width: 10px;
             height: 10px;
-            top: 7px;
+            top: 12px;
+            transform: rotate(45deg);
         }
     }
 } 
