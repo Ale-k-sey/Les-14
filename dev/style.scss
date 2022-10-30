@@ -38,10 +38,11 @@ body{
     
     url(assets/img/background.jpg) no-repeat top,
     
-    
+}
 
-
-    // background-image:url(/dev/assets/img/background-image-tools.png);
-    // background-repeat: no-repeat;  
-    // background-position: bottom 20px left 250px;
+@media (max-width: 1025px) {
+    body{
+        background:
+        url(assets/img/background.jpg) no-repeat top;
+    }
 }
