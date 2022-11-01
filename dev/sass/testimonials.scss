@@ -1,0 +1,89 @@
+.testimonials{
+    background: url(assets/img/testimonials-background.svg) center bottom/100% no-repeat;
+    h2{
+        text-align: center;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 24px;
+            border-top: 8px solid $primary-color;
+            border-bottom: 8px solid $primary-color;
+            transform: translateX(-22px) rotate(-45deg) translateY(-7px);
+        }
+    }
+    &__slider{
+        max-width: 990px;
+        width: 100%;
+        margin: 0 auto;         
+        border-radius: 5px; 
+        padding: 0 82px;           
+        img{
+            display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid $white;
+            margin: -60px auto 0;            
+        }
+        h5{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #2E3A59;
+            position: relative;
+            margin-bottom: 0;
+            margin-top: 10px;
+            &::after{
+                content: url(/dev/assets/img/testimonials-title-after.svg);
+                position: absolute;
+                top: -9px;
+                left: 345px;
+            }
+        }
+        p{
+            margin-top: 20px;
+            padding: 0 112px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+    
+            color: #2E3A59;
+        } 
+    }
+    
+}
+
+.slick-track{
+    padding-top: 60px;  
+}
+
+// .slick-list{
+//     width: 1000px;
+// }
+
+.slick-slide{
+    background-color: #fff;
+    
+}
+
+.slick-arrow{
+    width: 115px;
+    height: 115px;    
+    border-radius: 15px;
+    transform: rotate(45deg);    
+    z-index: 10;
+    background: linear-gradient(103.01deg, #0AA6FE -49.1%, #05FFFF 177.15%);
+    box-shadow: 0px 4px 25px rgba(10, 166, 254, 0.48), inset 0px 0px 25px rgba(0, 50, 180, 0.3);
+}
+
+.slick-next{
+    right: 25px;
+}
+
+.slick-prev{
+    left: 25px;
+}

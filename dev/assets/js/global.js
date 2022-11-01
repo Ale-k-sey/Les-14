@@ -60,4 +60,5 @@ jQuery(document).ready(function($) {
         //alert($lang);
         // alert ("location.href = 'index.php?lang=" + $(this).attr('data-value'));
     });
+    $('.testimonials__slider').slick();
 })
