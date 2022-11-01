@@ -131,3 +131,7 @@
 .icon__select-arrow--open {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5' viewBox='0 0 10 5' fill='none'%3E%3Cpath d='M4.99976 -0.000244141L-0.000244141 4.99976L9.99976 4.99976L4.99976 -0.000244141Z' fill='%232E3A59'/%3E%3C/svg%3E");
 }
+
+.btn-primary{
+	border-color: $primary-color;
+}

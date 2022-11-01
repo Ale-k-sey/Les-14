@@ -29,16 +29,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "sass/page/markup";
 @import "sass/media/media";
 
-body{
-    background:
+// body{
+//     background:
     
-    url(/dev/assets/img/background-image-baggy.png) no-repeat top,    
+//     url(/dev/assets/img/background-image-baggy.png) no-repeat top,    
     
-    url(/dev/assets/img/background_wave_top.png) no-repeat top 815px left 50%,
+//     url(/dev/assets/img/background_wave_top.png) no-repeat top 815px left 50%,
     
-    url(assets/img/background.jpg) no-repeat top,
+//     url(assets/img/background.jpg) no-repeat top,
     
-}
+// }
 
 @media (max-width: 1025px) {
     body{
