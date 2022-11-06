@@ -1,0 +1,99 @@
+.FAQ{
+    background: #E5E5E5;
+     .FAQ__title{
+        h2{
+            font-weight: 800;
+            font-size: 45px;
+            line-height: 55px;
+    
+            text-align: center;
+            position: relative; 
+            margin-bottom: 88px;
+            color: #2E3A59; 
+            &::before{
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 8px;
+                background-color: $primary-color;
+                transform: translateX(-35px) rotate(-45deg) translateY(5px);
+            } 
+            &::after{
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 8px;
+                background-color: #0AA6FE;;
+                transform: translateX(-60px) rotate(-45deg) translateY(70px);
+            }        
+        }
+     }   
+    .accordion{
+        max-width: 946px;
+        margin: 0 auto 45px;
+        .accordion-item{
+        margin-bottom: 25px;
+        border: none;        
+        border-radius: 5px;
+        overflow: hidden;
+        .accordion-header{          
+            .accordion-button{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.2;                
+                color: #2E3A59;                
+                padding: 36px;
+                &::after{
+                    background-image: url(/dev/assets/img/FAQ-plus-ico.svg);               
+                }
+                
+            }
+            .accordion-button:not(.collapsed){
+                background-color: $white;
+                color: #2E3A59;;
+                box-shadow: none;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        
+       } 
+    }
+    .FAQ__question{
+        
+        a{
+            max-width: 200px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            display:block;
+            margin: 0 auto;
+            color: #0AA6FE;
+            &:hover{
+                color: #0674b4;
+            }            
+        }
+    }
+    
+}
+
+
+.accordion-body{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    color: #727272;
+    padding: 0 67px 38px 58px;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: calc(100% - 38px);
+        background: linear-gradient(120.79deg, #0AA6FE 31.33%, #05FFFF 101.79%);
+        ;
+        top: 0;
+        left: 37px;
+    }
+}
