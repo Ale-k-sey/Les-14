@@ -1,29 +1,24 @@
 <section class="tarifs">
     <div class="container">
         <h2 class="text-center">ТАРИФЫ</h2>
-        <div class="tarifs__tab">
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                  <a class="nav-link  btn-window" aria-current="page" href="#">
-                    <span><img src="assets/img/window-ico.png" alt="windiw-icon"></span>
-                    <div class="d-inline">Windows</div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn-android" href="#">
-                    <span><img src="/dev/assets/img/android-ico.png" alt="android-icon"></span>
-                    <div class="d-inline">Android</div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active btn-ios" href="#">
-                    <span><img src="/dev/assets/img/iOS-ico.png" alt="iOS-icon"></span>
-                    <div class="d-inline">iOS</div>
-                  </a>
-                </li>                
-              </ul>
+        <div class="tarifs__tab d-flex justify-content-center">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active nav-link--windows" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span class="nav-link__img"><img src="/dev/assets/img/window-ico.png" alt=""></span>
+                <span class="nav-link__text">Windows</span></button>
+
+              <button class="nav-link nav-link--android" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="nav-link__img"><img src="/dev/assets/img/android-ico.png" alt=""></span>Android</button>
+
+              <button class="nav-link nav-link--iOS" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="nav-link__img"><img src="/dev/assets/img/iOS-ico.svg" alt=""></span>iOS</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+          </div>          
         </div>
-        <div class="tarifs__item d-flex justify-content-between">
+        <div class="tarifs__item d-flex justify-content-center">
           <div class="item--blue">
             <div class="item--blue__category item__category">ОБЫЧНАЯ</div>
             <h3 class="item__title">1 месяц</h3>

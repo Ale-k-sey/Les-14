@@ -1,6 +1,6 @@
 .tarifs{
     padding-top: 106px;
-    background: #E5E5E5;
+    background: #F5F9FF;
     padding-bottom: 135px;
     h2{
         font-weight: 800;
@@ -28,27 +28,55 @@
         }
     }
     .tarifs__tab{
-        max-width: 600px;
-        margin: 0 auto 60px;
-        .nav-item{
-            
-            .nav-link{
-                display: inline;                
-            }   
-        }           
-    }
-    .tarifs__tab{
-        ul li{
-            padding-left: 0;
-        &::before{
-            display: none;            
-        } 
+        .nav-tabs{
+            margin-bottom: 60px;
+            border: none;
+            button{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                margin-right: 16px;
+                &.nav-link{
+                    border-radius: 5px;
+                    color: #AAAAAA;
+                    background: #FFFFFF;
+                    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+                    &.nav-link--windows{
+                        padding: 21px 28px 21px 33px;
+                    }
+                    &.nav-link--android{
+                        padding-left: 32px;
+                        padding-right: 36px;
+                        
+                    }
+                    &.nav-link--iOS{
+                        padding-left: 28px;
+                        padding-right: 28px;
+                        margin-right: 0;
+                    }
+                    .nav-link__img{
+                        margin-right: 16px;                        
+                    }
+                    .nav-link__text{
+                        
+                    }
+                }
+                &.active{
+                    color: #FFFFFF;
+                    background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+                    box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
+                    border: none;
+                    .nav-link__img{
+                        filter: brightness(0) invert(1);
+                    }
+                    
+                }
+            }
         }
-        
-    }
+    }    
     .tarifs__item{
         // max-width: 1320px;        
-        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+        // box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
                
         .item__category{        
             font-weight: 600;
@@ -129,7 +157,8 @@
         }
         .item__button{
             background: $primary-color;
-            border-radius: 5px 55px 0px 0px;
+            border-radius: 0px 0px 5px 55px;
+            overflow: hidden;
             padding: 25px 0 30px 130px;
             a{
                 font-weight: 600;
@@ -149,52 +178,6 @@
     }
 }
 
-.btn-window{
-    padding: 26px 33px 25px 33px;
-    margin-right: 15px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    color: #AAAAAA;
-    background: #FFFFFF;
-        span{
-        margin-left: 0px;
-        margin-right: 13px;
-    }                            
-}
-
-.btn-android{
-    padding: 31px 27px 21px 27px;
-    margin-right: 15px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    background: #FFFFFF;    
-    color: #AAAAAA;
-    &:active{
-        background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
-    }
-    
-        span{
-        margin-left: 0px;
-        margin-right: 30px;
-    }
-}
-
-.btn-ios{
-    padding: 31px 28px 24px 28px;
-    box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-        span{
-        margin-left: 0px;
-        margin-right: 12px;
-    }
-}
-
 .nav-pills .nav-link{
     background-color: #FFFFFF;
 }
@@ -204,4 +187,9 @@
 .item--red
 {
     background-color: $white;
+    border-radius: 5px 55px 0px;
 } 
+
+.item--purple{
+    margin: 0 36px 0 36px;
+}

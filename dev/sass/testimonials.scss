@@ -1,7 +1,19 @@
 .testimonials{
-    background: url(assets/img/testimonials-background.svg) center bottom/100% no-repeat;
+    background: #F5F9FF;
+    // background: 
+    // url(/dev/assets/img/background.jpg) center bottom/100% no-repeat; 
+    background: linear-gradient(113.28deg, #1A47EA 6.67%, #82E9FF 99.48%);
+   
+    .testimonials__backgroundwave{
+        img{
+            width: 100%;
+        }
+        
+        margin: 0 auto;
+    }
     h2{
-        text-align: center;
+        margin-top: 51px;
+        text-align: center;        
         position: relative;
         &::before{
             content: "";
@@ -58,7 +70,8 @@
 }
 
 .slick-track{
-    padding-top: 60px;  
+    padding-top: 77px; 
+    padding-bottom: 30px; 
 }
 
 // .slick-list{
@@ -79,9 +92,7 @@
         position: absolute;
         transform: rotate(180deg);
         top: 168px;
-        left: 777px; 
-        border: 1px solid black;
-        z-index: 100;       
+        left: 777px;       
     }
 }
 
@@ -97,7 +108,7 @@
 
 .slick-next{
     right: 25px;
-    top: 97px;
+    top: 114px;
     &:before{
         content: "";
         display: block;
@@ -111,7 +122,7 @@
 
 .slick-prev{
     left: 25px;
-    top: 97px;
+    top: 114px;
     &:before{
         content: "";
         display: block;
