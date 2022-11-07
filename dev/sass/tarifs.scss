@@ -123,13 +123,13 @@
                 padding-bottom: 26px;
                 padding-left: 12px;
                 &::before{
-                    content: url(/dev/assets/img/tarifs-check-ico.svg);
+                    content: url(assets/img/tarifs-check-ico.svg);
                     transform: translateX(-15px) rotate(360deg) translateY(-10px);
                     background: none;
                 }
                 &.list--false{
                     &::before{
-                        content: url(/dev/assets/img/tarifs-close-ico.svg);
+                        content: url(assets/img/tarifs-close-ico.svg);
                         transform: translateX(-15px) rotate(360deg) translateY(-10px);
                         background: none;
                     }  
@@ -149,7 +149,7 @@
                 color: #2E3A59;
                 position: relative;
                 &::after{
-                    content: url(/dev/assets/img/tarifs-currency-ico-₽.svg);
+                    content: url(assets/img/tarifs-currency-ico-₽.svg);
                     position: absolute;
                     transform: translateX(24px) rotate(0deg) translateY(-8px);
                 }

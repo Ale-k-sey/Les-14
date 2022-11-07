@@ -1,7 +1,7 @@
 .testimonials{
     background: #F5F9FF;    
     // background: 
-    // url(/dev/assets/img/background.jpg) center bottom/100% no-repeat; 
+    // url(assets/img/background.jpg) center bottom/100% no-repeat; 
     background: linear-gradient(113.28deg, #1A47EA 6.67%, #82E9FF 99.48%);
    
     .testimonials__backgroundwave{
@@ -49,7 +49,7 @@
             margin-bottom: 0;
             margin-top: 10px;
             &::after{
-                content: url(/dev/assets/img/testimonials-title-after.svg);
+                content: url(assets/img/testimonials-title-after.svg);
                 position: absolute;
                 top: -9px;
                 left: 455px;
@@ -82,13 +82,13 @@
     background-color: #fff;
     position: relative;
     &::before{
-        content: url(/dev/assets/img/testimonials-slider-decor.png);
+        content: url(assets/img/testimonials-slider-decor.png);
         position: absolute;
         top: -25px;
         left: 0;        
     }
     &::after{
-        content: url(/dev/assets/img/testimonials-slider-decor.png);
+        content: url(assets/img/testimonials-slider-decor.png);
         position: absolute;
         transform: rotate(180deg);
         top: 168px;

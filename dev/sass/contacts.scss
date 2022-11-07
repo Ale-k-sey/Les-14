@@ -1,0 +1,74 @@
+.contacts{
+    background: #F5F9FF;
+    padding-top: 103px;
+    h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 55px;
+        color: #2E3A59;
+        position: relative;
+        margin-bottom: 92px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 24px;
+            border-top: 8px solid $primary-color;
+            border-bottom: 8px solid $primary-color;
+            left: 522px;
+            top: -2px;
+            transform: rotate(-45deg);
+        }
+    }
+    .row{        
+        .col__img{
+            position: relative;
+            &::after{                
+                content: url(assets/img/contacts-img.svg);
+                position: absolute;
+                left: -170px;
+                top: -85px;
+            }
+        }
+        .col__form{
+            position: relative;
+            
+            h4{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #2E3A59;
+            }
+            background: $white;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
+            padding: 48px 32px 33px 62px;
+            .form-control{
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid rgba(46, 58, 89, 0.43);
+                padding-bottom: 17px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(46, 58, 89, 0.43);                
+            }
+            
+            button{
+                margin: 49px auto 0;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+            
+        }        
+    }
+    
+}
+
+
+#exampleFormControlInput1{
+    margin-right: 22px;
+}

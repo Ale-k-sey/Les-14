@@ -3,9 +3,9 @@
     padding-top: 85px;
         background:
         
-        url(/dev/assets/img/background-image-baggy.png) no-repeat top,    
+        url(assets/img/background-image-baggy.png) no-repeat top,    
         
-        url(/dev/assets/img/background_wave_top.png) center bottom/100% no-repeat,
+        url(assets/img/background_wave_top.png) center bottom/100% no-repeat,
         
         url(assets/img/background.jpg) center/cover no-repeat;
         
@@ -75,7 +75,7 @@
             border-color: $primary-color;
         }
         &::before{
-            content: url(/dev/assets/img/background-image-tools.png);
+            content: url(assets/img/background-image-tools.png);
             
             position: absolute;          
             top: 92px;
@@ -129,7 +129,7 @@
                 margin-top: 17px;
             }
             &::before{
-                content: url(/dev/assets/img/background-image-tools.png);
+                content: url(assets/img/background-image-tools.png);
                 width: 437px;
                 height: 142px;
                 position: absolute;          
