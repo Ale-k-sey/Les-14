@@ -1,17 +1,23 @@
 <section class="functional">
     <div class="container d-flex">
         <div class="functional_carousel">
-            <div class="btn-row">
-                <a href="#" class="btn btn-light btn-window">
-                    <span><img src="assets/img/window-ico.png" alt="windiw-icon"></span>
-                    <div class="d-inline">Windows</div></a>
-                <a href="#" class="btn btn-light btn-android">
-                    <span><img src="/dev/assets/img/android-ico.png" alt="android-icon"></span>
-                    <div class="d-inline">Android</div></a>
-                <a href="#" class="btn btn-info btn-ios">
-                    <span><img src="/dev/assets/img/iOS-ico.png" alt="iOS-icon"></span>
-                    <div class="d-inline">iOS</div></a>
-            </div>
+          <div class="functional__tab d-flex justify-content-center">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active nav-link--windows" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span class="nav-link__img"><img src="/dev/assets/img/window-ico.png" alt=""></span>
+                  <span class="nav-link__text">Windows</span></button>
+  
+                <button class="nav-link nav-link--android" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="nav-link__img"><img src="/dev/assets/img/android-ico.png" alt=""></span>Android</button>
+  
+                <button class="nav-link nav-link--iOS" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="nav-link__img"><img src="/dev/assets/img/iOS-ico.svg" alt=""></span>iOS</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+            </div>          
+          </div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">

@@ -3,43 +3,53 @@
     background-color: #F5F9FF;
     .functional_carousel{
         width: 580px;
-       .btn-row{
-        width: 575px;
-        margin-bottom: 41px;
-                .btn{
+        .functional__tab{
+            .nav-tabs{
+                margin-bottom: 41px;
+                border: none;
+                button{
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 22px;
-                    color: #AAAAAA;
-                    border: none;
-                    &.btn-window{
-                        padding: 22px 33px;
-                        margin-right: 15px;
+                    margin-right: 16px;
+                    &.nav-link{
+                        border-radius: 5px;
+                        color: #AAAAAA;
+                        background: #FFFFFF;
                         box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
-                            span{
-                            margin-left: 0px;
-                            margin-right: 13px;
-                        }                            
-                    }
-                    &.btn-android{
-                        padding: 17px 24px 17px 27px;
-                        margin-right: 15px;
-                        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
-                            span{
-                            margin-left: 0px;
-                            margin-right: 30px;
+                        &.nav-link--windows{
+                            padding: 21px 28px 21px 33px;
+                        }
+                        &.nav-link--android{
+                            padding-left: 32px;
+                            padding-right: 36px;
+                            
+                        }
+                        &.nav-link--iOS{
+                            padding-left: 28px;
+                            padding-right: 28px;
+                            margin-right: 0;
+                        }
+                        .nav-link__img{
+                            margin-right: 16px;                        
+                        }
+                        .nav-link__text{
+                            
                         }
                     }
-                    &.btn-ios{
-                        padding: 13px 28px 20px 28px;
+                    &.active{
+                        color: #FFFFFF;
+                        background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
                         box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
-                            span{
-                            margin-left: 0px;
-                            margin-right: 12px;
+                        border: none;
+                        .nav-link__img{
+                            filter: brightness(0) invert(1);
                         }
+                        
                     }
-                }            
-       }
+                }
+            }
+        } 
        .carousel{
         width: 300px;
         margin: 0 auto;
@@ -56,9 +66,9 @@
 
     .carousel-control-prev{      
         align-items: flex-end;
-        margin-left: 75px;
+        margin-left: 85px;
         .carousel-control-prev-icon{
-            background-image: url(/dev/assets/img/carousel-arrow-left.png);
+            background-image: url(/dev/assets/img/carousel-arrow-left.svg);
             background-repeat: no-repeat;
             width: 60px;
             height: 30px;
@@ -68,7 +78,7 @@
         align-items: flex-end;
         margin-right: 75px;    
         .carousel-control-next-icon{
-            background-image: url(/dev/assets/img/carousel-arrow-left.png);
+            background-image: url(/dev/assets/img/carousel-arrow-left.svg);
             background-repeat: no-repeat;
             transform: rotate(180deg);
             width: 60px;
@@ -140,6 +150,9 @@
                 }
                 
             }
+        }
+        .alert{
+            margin-bottom: 57px;
         }
         .alert-warning{
             color: #828282;
