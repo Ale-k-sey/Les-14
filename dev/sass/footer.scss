@@ -1,7 +1,10 @@
 footer{
-  height: 100px;
-  background: $primary-color;
-  margin-top: auto;
+  margin-top: -373px;
+  padding-top: 470px;
+  padding-bottom: 142px;  
+  background:
+    url(assets/img/footer-background.svg) center/cover no-repeat;
+
 }
 
- 
+@import "sass/header";

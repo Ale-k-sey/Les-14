@@ -1,6 +1,8 @@
 .contacts{
     background: #F5F9FF;
+    
     padding-top: 103px;
+    
     h2{
         text-align: center;
         font-weight: 800;
@@ -33,7 +35,18 @@
         }
         .col__form{
             position: relative;
-            
+            &::before{
+                content: url(assets/img/contacts-telegram-img.svg);
+                position: absolute;
+                top: -97px;
+                left: 500px;
+            }
+            &::after{
+                content: url(assets/img/contacts-message-img.svg);
+                position: absolute;
+                top: 283px;
+                left: -100px;
+            }
             h4{
                 font-weight: 600;
                 font-size: 18px;
@@ -63,7 +76,7 @@
                 color: #FFFFFF;
             }
             
-        }        
+        }                
     }
     
 }
