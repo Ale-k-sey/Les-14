@@ -222,6 +222,86 @@
             }
         }  
     }
+
+    .testimonials{
+        h2{
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        .testimonials__slider{
+            max-width: 360px;
+            width: 100%;
+            padding: 0 2px 45px;
+            img{
+                width: 65px;
+                height: 65px;
+                margin: -32px auto 0;
+                border: 3px solid $white;
+            }
+            h5{
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                padding: 0 19px;
+            }
+        }
+        .slick-track{
+            padding-top: 58px; 
+        }
+        .slick-slide{
+            border-radius: 5px;
+            &::after{
+                top: 115px;
+                left: 309px;   
+            }
+        }
+        .slick-arrow{
+            width: 115px;
+            height: 115px;    
+            border-radius: 15px;
+            transform: rotate(45deg);    
+            z-index: 10;
+            background: none;
+            box-shadow: none;
+        }
+        .slick-prev{
+            &::before{
+                content: url(assets/img/testimonials-icon-arrow-left__white.svg);
+                border: none;
+                transform: rotate(315deg);
+                // position: absolute;
+                // top: -25px;
+                // left: 0;        
+            }
+
+        }
+        .slick-next{
+            right: 0;
+            &::before{
+                content: url(/dev/assets/img/testimonials-icon-arrow-right__white.svg);
+                border: none;
+                transform: rotate(315deg);
+                // position: absolute;
+                // top: -25px;
+                // left: 0;        
+            }
+
+        }
+        .slick-next,
+        .slick-prev{
+            top: 216px;
+        }
+        
+
+    }
+    
+    
 }
 
 
