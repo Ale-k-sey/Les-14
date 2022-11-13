@@ -41,12 +41,12 @@
                 top: -97px;
                 left: 500px;
             }
-            &::after{
-                content: url(assets/img/contacts-message-img.svg);
-                position: absolute;
-                top: 283px;
-                left: -100px;
-            }
+            // &::after{
+            //     content: url(assets/img/contacts-message-img.svg);
+            //     position: absolute;
+            //     top: 283px;
+            //     left: -100px;
+            // }
             h4{
                 font-weight: 600;
                 font-size: 18px;
@@ -74,6 +74,13 @@
                 font-size: 18px;
                 line-height: 22px;
                 color: #FFFFFF;
+                position: relative;
+                &::after{
+                        content: url(assets/img/contacts-message-img.svg);
+                        position: absolute;
+                        top: 16px;
+                        left: -320px;
+                    }
             }
             
         }                

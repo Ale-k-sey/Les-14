@@ -88,55 +88,53 @@
     }
 }
 
-@media(max-width: 375px) {
-    .intro{
-        .container-title{
-            position: relative;
+// @media(max-width: 375px) {
+//     .intro{
+//         .container-title{
+//             position: relative;
         
-            max-width: 334px;
-            margin-top: 46px;        
+//             max-width: 334px;
+//             margin-top: 46px;        
             
-            h1{                
-                font-weight: 800;
-                font-size: 30px;
-                line-height: 37px;
-                text-align: center;
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                width: 110px;
-                height: 3px;
-                background: $primary-gradient;
-                transform: translate(100%);
-                // bottom: -28px;
-                // left: 0;
-            }
-        }
-        .container-text{
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 15px;
-            text-align: center;
-        }
-        .btn-row {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            a.btn.btn-success.btn-intro{
-                margin-left: 0;
-                margin-top: 17px;
-            }
-            &::before{
-                content: url(assets/img/background-image-tools.png);
-                width: 437px;
-                height: 142px;
-                position: absolute;          
-                top: 165px;
-                left: -5px;
-            } 
-        }
-    }
+//             h1{                
+//                 font-weight: 800;
+//                 font-size: 30px;
+//                 line-height: 37px;
+//                 text-align: center;
+//             }
+//             &::after{
+//                 content: "";
+//                 position: absolute;
+//                 width: 110px;
+//                 height: 3px;
+//                 background: $primary-gradient;
+//                 transform: translate(100%);                
+//             }
+//         }
+//         .container-text{
+//             font-weight: 600;
+//             font-size: 12px;
+//             line-height: 15px;
+//             text-align: center;
+//         }
+//         .btn-row {
+//             margin-top: 30px;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: center;
+//             a.btn.btn-success.btn-intro{
+//                 margin-left: 0;
+//                 margin-top: 17px;
+//             }
+//             &::before{
+//                 content: url(assets/img/background-image-tools.png);
+//                 width: 437px;
+//                 height: 142px;
+//                 position: absolute;          
+//                 top: 165px;
+//                 left: -5px;
+//             } 
+//         }
+//     }
     
-}
+// }
