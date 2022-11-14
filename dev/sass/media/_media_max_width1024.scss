@@ -144,8 +144,7 @@
                                     margin-right: 0;
                                 }
                             }
-                        }
-                        
+                        }                        
                     }
                     .nav-tabs button.nav-link.nav-link--iOS{
                         padding-left: 17px;
@@ -301,7 +300,161 @@
 
     }
     
-    
+    .tarifs{
+        padding-top: 28px;
+        h2{
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 37px;
+            position: relative;
+            &::before{
+                content: "";
+                width: 23px;
+                height: 5px;
+                
+                position: absolute;
+                transform: translateX(-22px) rotate(-45deg) translateY(5px);  
+            }
+            &::after{
+                content: "";
+                width: 23px;
+                height: 5px;                
+                position: absolute;
+                transform: translateX(-30px) rotate(-45deg) translateY(40px);
+            }
+        }
+        .tarifs__tab{
+            .nav-tabs{
+                margin-bottom: 45px; 
+                button{
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-right: 10px;
+                    &.nav-link{                        
+                        &.nav-link--windows{
+                            padding: 10px 16px 6px 7px;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            .nav-link__img{
+                                margin-right: 0;
+                                img{
+                                    transform: scale(0.7);
+                                    span{
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &.nav-link--android{
+                            padding-left: 17px;
+                            padding-right: 18px;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            .nav-link__img{
+                                margin-right: 0;
+                                img{
+                                    transform: scale(0.7);
+                                    span{
+                                        margin-right: 0;
+                                    }
+                                }
+                            }                        
+                        }
+                        &.nav-link--iOS{
+                            padding-left: 17px;
+                            padding-right: 17px;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            .nav-link__img{
+                                margin-right: 0;
+                                img{
+                                    transform: scale(0.7);
+                                    span{
+                                        margin-right: 0;
+                                    }
+                                }
+                            }                            
+                        }
+                        .nav-link__img{
+                            margin-right: 16px;                        
+                        }                        
+                    }                    
+                } 
+            }
+        }
+        .tarifs__item{
+            flex-direction: column;
+            align-items: center;
+            .item__category{        
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;            
+                padding-top: 16x;
+                padding-bottom: 16px;
+                border-top-right-radius: 55px;
+                border-bottom-left-radius: 55px;
+            } 
+            .item--blue__category,
+            .item--purple__category,
+            .item--red__category,
+            .item--blue,
+            .item--purple,
+            .item--red{
+                max-width: 300px;
+            }
+            h3{
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 30px;
+
+                padding-top: 25px;
+                padding-bottom: 24px;
+            }
+            ul{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+
+                padding-left: 62px;
+                li{
+                    padding-bottom: 11px;
+                }
+            }
+            .item__price{
+                margin-left: 108px;
+                margin-bottom: 21px;
+                p{
+                    font-weight: 600;
+                    font-size: 35px;
+                    line-height: 43px;
+                    
+                    &::after{
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height:30px;               
+                        transform: translateX(8px) rotate(0deg) translateY(-8px);
+                    }
+                }  
+            }
+            .item__button{
+                padding: 21px 0 20px 76px;   
+                a{
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+            }
+            .item--blue,
+            .item--purple{
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 
