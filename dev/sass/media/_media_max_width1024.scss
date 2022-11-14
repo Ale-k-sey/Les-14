@@ -302,6 +302,7 @@
     
     .tarifs{
         padding-top: 28px;
+        padding-bottom: 79px;
         h2{
             font-weight: 800;
             font-size: 30px;
@@ -452,6 +453,66 @@
             .item--blue,
             .item--purple{
                 margin-bottom: 30px;
+            }
+        }
+    }
+
+    .FAQ{
+        .FAQ__title{
+            h2{
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 37px;
+
+                margin-bottom: 50px;
+                &::before{                    
+                    width: 23px;
+                    height: 5px;                    
+                    transform: translateX(-20px) rotate(-45deg) translateY(5px);
+                }
+                &::after{                    
+                    width: 23px;
+                    height: 5px;                    
+                    transform: translateX(-30px) rotate(-45deg) translateY(40px);
+                } 
+            }
+        }
+        .accordion{
+            margin: 0 auto 30px;
+            .accordion-item{
+                margin-bottom: 21px;
+                .accordion-header{
+                    .accordion-button{
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 16px;
+
+                        padding: 26px 15px 26px 25px;
+                    }
+                    .accordion-button:not(.collapsed){
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 16px;
+
+                        padding: 26px 15px 26px 25px;
+                    }
+                }
+                .accordion-body{
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }  
+        }
+        .FAQ__question{
+            a{
+                max-width: 136px;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+
+                // display: inline-block;
+                // text-align: center;
             }
         }
     }
