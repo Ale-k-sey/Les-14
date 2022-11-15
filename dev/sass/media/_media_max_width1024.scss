@@ -516,6 +516,65 @@
             }
         }
     }
+
+    .contacts{
+        padding-top: 75px;
+        h2{
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 37px; 
+        }
+        .row{
+            .col__img{
+                display: none;
+            }
+            .col__form{
+                margin: 0 auto;
+                padding: 0 28px;
+                min-width: 336px;
+                position: relative;
+                &::before{
+                    content: url(/dev/assets/img/contacts-telegram-min-img.svg);
+                    position: absolute;
+                    top: -95px;
+                    left: 160px;
+                }
+                &::after{
+                    content: url(assets/img/contacts-message-min-img.svg);
+                    position: absolute;
+                    top: -95px;
+                    left: 66px;
+                }
+                h4{
+                    margin-top: 45px;
+                    margin-bottom: 2px;
+                    text-align: center;                    
+                }
+                .d-flex{
+                    flex-direction: column;
+                }
+                .form-control{
+                    padding: 38px 0 17px 27px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 6px;
+                    &:last-child{
+                        padding-bottom: 60px;
+                    }
+                }
+                button{
+                    margin: 30px auto;
+
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+                    &::after{
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
 }
 
 

@@ -18,9 +18,9 @@
             height: 24px;
             border-top: 8px solid $primary-color;
             border-bottom: 8px solid $primary-color;
-            left: 522px;
-            top: -2px;
-            transform: rotate(-45deg);
+            // left: 522px;
+            // top: -2px;
+            transform: translateX(-20px) rotate(-45deg) translateY(-15px);
         }
     }
     .row{        
