@@ -90,6 +90,8 @@
                 order: 2;
                 margin: 0 auto;
                 .supporting{
+                    display: block;
+                    margin-bottom: 90px;
                     .list-group-title{
                         font-weight: 800;
                         font-size: 16px;
@@ -98,14 +100,22 @@
                         color: #2E3A59;
                         margin-top: 31px;
                         margin-bottom: 31px;
-                        text-align: center;
-                        
-                            .list-group-item{
-                                border: none;
-                                background: none;
-                            }
-                        
+                        text-align: center;  
                     }
+                    .list-group{
+                        padding-left: 50px;
+                        
+                        font-size: 12px;
+                        line-height: 15px;
+                        .list-group-item{
+                            border: none;
+                            background: none;
+                            span{
+                                font-weight: 700; 
+                            }
+                        }
+                    }
+                    
                 }
                 .functional__tab{
                     
@@ -211,12 +221,32 @@
                 }
                 .alert.alert-warning{
                     position: absolute;
-                    top: -100%;
+                    top: -100%;                    
                 }
                 
                 .btn-row{
-                  position: absolute;  
-                    top: 100%;
+                  position: absolute;                  
+                  .btn-secondary{
+                    display: none;
+                  }
+                  .btn-primary{
+                    padding: 18px 0 20px 25px;
+
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+
+                    position: relative;
+                    top: 820px;
+                    left: 110px;
+                    span{
+                        margin-left: 0;
+                        img{
+                            transform: scale(0.6);
+                        } 
+                    } 
+                    
+                  }
                 }
             }
         }  
@@ -578,11 +608,13 @@
 
     footer{
         padding-top: 350px;
-        .navbar .navbar-expand-lg .navbar-light{
+        .navbar {
             display: none;
         }   
     }
     
 }
+
+
 
 
